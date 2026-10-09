@@ -42,7 +42,7 @@ class TestReportingEngine(unittest.TestCase):
     def test_report_endpoint_computations(self):
         """Verify get_report_data accurately computes min, max, avg and energy values."""
         data = get_report_data()
-        self.assertEqual(data["project_name"], "WattWise Edge")
+        self.assertEqual(data["project_name"], "VoltSense")
         self.assertEqual(data["total_samples"], 3)
         self.assertEqual(data["metrics"]["current"]["peak"], 6.50)
         self.assertEqual(data["metrics"]["current"]["min"], 2.20)
